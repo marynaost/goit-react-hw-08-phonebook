@@ -22,6 +22,7 @@ export const contactsApi = createApi({
   endpoints: builder => ({
     fetchContacts: builder.query({
       query: () => '/contacts',
+      keepUnusedDataFor: 5,
       providesTags: ['Contact'],
     }),
     deleteContacts: builder.mutation({

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import s from './AuthNav.module.scss';
+import s from '../HeadersStyles.module.scss';
 
 export default function AuthNav(params) {
   return (
@@ -8,13 +8,13 @@ export default function AuthNav(params) {
         to="/register"
         className={({ isActive }) => (isActive ? s.active : s.link)}
       >
-        Регистрация
+        Registration
       </NavLink>
       <NavLink
         to="/login"
         className={({ isActive }) => (isActive ? s.active : s.link)}
       >
-        Логин
+        Login
       </NavLink>
     </div>
   );

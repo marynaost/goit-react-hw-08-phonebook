@@ -10,13 +10,11 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-
+import { rtkQueryErrorLogger } from './auth/midleware';
 import storage from 'redux-persist/lib/storage';
 import { authApi } from './auth/auth-reducer';
 import { authSlice } from './auth/auth-slice';
-import { contactsApi } from 'redux/contacts/contacts-reducer';
-import { filterReducer } from './contacts/contacts-reducer';
-// import logger from 'redux-logger';
+import { contactsApi, filterReducer } from 'redux/contacts/contacts-reducer';
 
 const authPersistConfig = {
   key: 'auth',
@@ -37,6 +35,7 @@ export const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
+    rtkQueryErrorLogger,
     contactsApi.middleware,
     authApi.middleware,
   ],

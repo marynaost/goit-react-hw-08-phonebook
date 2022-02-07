@@ -22,17 +22,17 @@
   margin-left: 20px;
   width: auto;
   padding: 4px 10px;
-  border-radius: 4px;
-  background-color: rgb(91, 167, 180);
-  color: #fff;
   font-weight: 500;
-
+  border-radius: 5%;
+  color: #fff;
+  border: transparent;
+  background-color: #e84a5f;
   &:hover,
   &:focus {
-    background-color: rgb(105, 196, 212);
+    background-color: #b63a4a;
   }
 
   &:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px #b63a4a;
   }
 }

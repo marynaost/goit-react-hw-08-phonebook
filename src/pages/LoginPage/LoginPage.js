@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useLoginUserMutation } from 'redux/auth/auth-reducer';
-import s from './LoginPage.module.scss';
+import { Button, Form } from 'react-bootstrap';
+import 'react-toastify/dist/ReactToastify.css';
+import s from '../PagesStyles.module.scss';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -24,35 +26,37 @@ export default function LoginPage() {
     setEmail('');
     setPassword('');
   };
-  return (
-    <div>
-      <h1>Страница логина</h1>
 
-      <form onSubmit={handleSubmit} className={s.form}>
-        <label className={s.label}>
-          Почта
-          <input
+  return (
+    <div className={s.container}>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label className={s.label}>Email</Form.Label>
+          <Form.Control
             type="email"
+            placeholder="example@mail.com"
             name="email"
             value={email}
             required
             onChange={handleChange}
           />
-        </label>
+        </Form.Group>
 
-        <label className={s.label}>
-          Пароль
-          <input
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label className={s.label}>Password</Form.Label>
+          <Form.Control
             type="password"
+            placeholder="The password must contain at least 7 characters"
             name="password"
             value={password}
             required
             onChange={handleChange}
           />
-        </label>
-
-        <button type="submit">Войти</button>
-      </form>
+        </Form.Group>
+        <Button variant="primary" type="submit" className={s.button}>
+          Submit
+        </Button>
+      </Form>
     </div>
   );
 }

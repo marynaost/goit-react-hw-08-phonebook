@@ -2,14 +2,14 @@ import { useDeleteContactsMutation } from 'redux/contacts/contacts-reducer';
 import PropTypes from 'prop-types';
 import s from './ContactList.module.scss';
 
-export function ContactListItem({ id, name, phone }) {
+export function ContactListItem({ id, name, number }) {
   const [deleteContacts, { isLoading: isDeleting }] =
     useDeleteContactsMutation();
 
   return (
     <li className={s.list}>
       <span>
-        {name}: {phone}
+        {name}: {number}
       </span>
       <button
         className={s.button}
@@ -26,5 +26,5 @@ export function ContactListItem({ id, name, phone }) {
 ContactListItem.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
 };

@@ -10,7 +10,7 @@ export default function UserMenu() {
   return (
     <div className={s.container}>
       <span className={s.name}>Wellcome, {name}</span>
-      <button type="button" onClick={() => logoutUser()}>
+      <button type="button" className={s.button} onClick={() => logoutUser()}>
         Log out
       </button>
     </div>
