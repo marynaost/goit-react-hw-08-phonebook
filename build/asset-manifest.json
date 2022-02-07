@@ -14,10 +14,10 @@
     "main.js": "/static/js/main.c1b1a22a.chunk.js",
     "main.js.map": "/static/js/main.c1b1a22a.chunk.js.map",
     "register.css": "/static/css/register.286ab735.chunk.css",
-    "register.js": "/static/js/register.73cfe496.chunk.js",
-    "register.js.map": "/static/js/register.73cfe496.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.808c6ee8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.808c6ee8.js.map",
+    "register.js": "/static/js/register.3cf68a1f.chunk.js",
+    "register.js.map": "/static/js/register.3cf68a1f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9639f96d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9639f96d.js.map",
     "static/css/7.992f8e3d.chunk.css": "/static/css/7.992f8e3d.chunk.css",
     "static/js/7.a290a4d2.chunk.js": "/static/js/7.a290a4d2.chunk.js",
     "static/js/7.a290a4d2.chunk.js.map": "/static/js/7.a290a4d2.chunk.js.map",
@@ -32,7 +32,7 @@
     "static/media/index.css": "/static/media/phone.daae3d1d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.808c6ee8.js",
+    "static/js/runtime-main.9639f96d.js",
     "static/css/7.992f8e3d.chunk.css",
     "static/js/7.a290a4d2.chunk.js",
     "static/css/main.d8f63156.chunk.css",
