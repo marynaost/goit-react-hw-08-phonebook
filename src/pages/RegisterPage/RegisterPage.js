@@ -33,7 +33,7 @@ export default function RegisterPage() {
   return (
     <div className={s.container}>
       <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label className={s.label}>Name</Form.Label>
           <Form.Control
             type="text"
@@ -44,7 +44,7 @@ export default function RegisterPage() {
           />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3" controlId="formBasicMail">
           <Form.Label className={s.label}>Email</Form.Label>
           <Form.Control
             type="email"
